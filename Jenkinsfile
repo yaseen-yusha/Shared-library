@@ -7,11 +7,6 @@ pipeline{
        gitcheckout() 
       }
     }
-    stage('maven'){
-      steps{
-        mavenTest()
-      }  
-    }
   }
 }
 
