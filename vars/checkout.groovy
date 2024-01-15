@@ -15,7 +15,7 @@ def call(body) {
     dir("${body.dirPath}") {
     git branch: "${body.branch}", credentialsId: "${body.credentialsID}", url: "${body.url}"
     }
-    sh " ls -lrt ${b
+    sh " ls -lrt ${body.dirPath}"
     }
   catch (err) {
     currentBuild.result = 'FAILED'
