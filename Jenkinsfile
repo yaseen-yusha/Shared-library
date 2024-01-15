@@ -4,12 +4,12 @@ pipeline{
   stages{
     stage('scm'){
       steps{
-       gitcheckout 
+       gitcheckout() 
       }
     }
     stage('maven'){
       steps{
-        mavenTest
+        mavenTest()
       }  
     }
   }
