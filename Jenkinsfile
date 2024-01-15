@@ -1,2 +1,2 @@
 @Library('Shared-library') _
-gitCheckout
+checkout
