@@ -1,3 +1,13 @@
 @Library('Shared-library') _
-checkout
-mavenTest
+pipeline{
+  agent any
+  stages{
+    stage('scm'){
+      gitcheckout
+    }
+    stage('mvn'){
+      mavenTest
+    }
+  }
+}
+
