@@ -3,10 +3,14 @@ pipeline{
   agent any
   stages{
     stage('scm'){
-      gitcheckout
+      steps{
+       gitcheckout 
+      }
     }
-    stage('mvn'){
-      mavenTest
+    stage('maven'){
+      steps{
+        mavenTest
+      }  
     }
   }
 }
