@@ -1,4 +1,5 @@
 @Library('Shared-library') _
-checkout
-mavenTest   
-
+pipeline{
+  checkout
+  mavenTest   
+}
